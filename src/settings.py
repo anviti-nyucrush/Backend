@@ -56,7 +56,7 @@ WSGI_APPLICATION = 'src.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': database,
+        'NAME': 'database',
     }
 }
 
