@@ -9,7 +9,9 @@ from profilesBasic.views import (
     managePhotos , selectSource, aboutYou
 ) 
 from homescreen.views import(
-    advanceFilter, Filter, suscribeElite
+    advanceFilter, Filter, suscribeElite, elite_register1,
+    elite_register2, elite_register3, elite_register4,
+    elite_register5,elite_payment, home
 )
 
 urlpatterns = [
@@ -34,6 +36,13 @@ urlpatterns = [
     path('home/filter', Filter),
     path('home/filter/adv', advanceFilter),
     path('home/elite/subscribe', suscribeElite),
+    path('home/elite/register1', elite_register1),
+    path('home/elite/register2', elite_register2),
+    path('home/elite/register3', elite_register3),
+    path('home/elite/register4', elite_register4),
+    path('home/elite/register5', elite_register5),
+    path('home/elite/payment', elite_payment),
+    path('home/', home),
     
     
 
