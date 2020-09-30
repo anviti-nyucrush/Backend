@@ -13,6 +13,10 @@ from homescreen.views import(
     elite_register2, elite_register3, elite_register4,
     elite_register5,elite_payment, home
 )
+from userprofile.views import(
+    userprofile_complete, userprofile_incomplete1, 
+    userprofile_incomplete2, settings
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -44,7 +48,11 @@ urlpatterns = [
     path('home/elite/payment', elite_payment),
     path('home/', home),
     
-    
+    #profile
+    path('profile/incomplete1', userprofile_incomplete1),
+    path('profile/incomplete2', userprofile_incomplete2),
+    path('profile/complete', userprofile_complete),
+    path('profile/settings', settings),
 
     
 ]
